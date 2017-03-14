@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/AppBaseTheme"
+    android:title="@string/title">
+    <PreferenceScreen
+        android:key="Info"
+        android:title="@string/information">
+        <PreferenceScreen
+            android:key="Module info"
+            android:summary="@string/info_s"
+            android:title="@string/info">
+
+
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="Module info 2"
+            android:summary="@string/info2_s">
+
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:key="tip"
+            android:summary="@string/tip_s"></PreferenceScreen>
+
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:key="thx"
+        android:title="@string/thx">
+        <PreferenceScreen
+            android:key="support me"
+            android:summary="@string/supportme_s"
+            android:title="@string/supportme"></PreferenceScreen>
+        <PreferenceScreen
+            android:summary="@string/details_s"
+            android:title="@string/details">
+
+        </PreferenceScreen>
+    </PreferenceScreen>
+    <PreferenceCategory
+        android:key="tweaks"
+        android:title="@string/tweaks">
+
+    </PreferenceCategory>
+    <EditTextPreference
+        android:defaultValue="46"
+        android:key="scale"
+        android:summary="@string/scale_s"
+        android:title="@string/scale" />
+    <EditTextPreference
+        android:defaultValue="2"
+        android:key="padding"
+        android:summary="@string/padding_s"
+        android:title="@string/padding" />
+    <CheckBoxPreference
+        android:key="disable_MC"
+        android:summary="@string/disable_MC_s"
+        android:title="@string/disable_MC" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="hide_app"
+        android:summary="@string/hide_s"
+        android:title="@string/hide" />
+</PreferenceScreen>

@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">Meizu Icon fix</string>
+    <string name="title">Meizu Icon fix</string>
+    <string name="information">Basic info</string>
+    <string name="info"></string>
+    <string name="info_s">When you get rid of the infinity icon all 3rd party app icons became huge.\nTo fix that you should change the size of the icons in a section bellow.</string>
+    <string name="info2_s">For Meizu Pro 5 in flyme 6 I recommend set the size to 46.\nFor the higher screen resolutions you should use the higher size.</string>
+    <string name="tweaks">Settings</string>
+    <string name="scale">Change the icon size</string>
+    <string name="scale_s"></string>
+    <string name="hide">Hide module icon</string>
+    <string name="hide_s">You can still get access to the module through the xposed installer.</string>
+
+    <string name="padding">Ticker icon padding</string>
+    <string name="padding_s">This value determines how much will be top and bottom padding for ticker notification icon.</string>
+
+    <string name="tip_s">To apply any changes close the app and reboot your device.</string>
+
+    <string name="disable_MC">Disable MC icons</string>
+    <string name="disable_MC_s">MC stands for Meizu Customized. These icons (e.g whatsapp) are already has been shown without this module. But you can disable them and see what will happen. May be there will not be any difference at all.</string>
+    <string name="thx">Say thanks to me</string>
+
+    <string name="supportme_s">I have spend a lot of hours and days to get things work.\nIf you wish you can donate to me.
+         </string>
+    <string name="details">Details</string>
+    <string name="details_s">PayPal: s0bes@mail.ru\nYandex money: 41001916005231\nWeb money WMR: R387576044868\nWeb money WMZ: Z165328295302</string>
+    <string name="supportme">Support me</string>
+    <string name="title_activity_pref">PrefActivity</string>
+
+</resources>
