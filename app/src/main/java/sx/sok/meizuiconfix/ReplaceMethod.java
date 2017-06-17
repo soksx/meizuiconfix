@@ -71,10 +71,11 @@ public class ReplaceMethod {
         if (disable_MC == true) {
             XposedHelpers.findAndHookMethod("com.flyme.systemui.statusbar.phone.MeizuCustomizedIcons",
                     classLoader, "isMeizuCustomizedIcon", String.class, mFALSE);
-        } else {
+        } 
+        /*else {
             XposedHelpers.findAndHookMethod("com.flyme.systemui.statusbar.phone.MeizuCustomizedIcons",
                     classLoader, "isMeizuCustomizedIcon", String.class, mTRUE);
-        }
+        }*/
 
         XposedHelpers.findAndHookMethod("com.android.systemui.statusbar.StatusBarIconView", classLoader, "getIcon", Context.class, "com.android.internal.statusbar.StatusBarIcon", new XC_MethodHook() {
             @Override
