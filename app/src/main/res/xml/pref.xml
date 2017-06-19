@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:theme="@style/AppBaseTheme"
     android:title="@string/title">
+
     <PreferenceScreen
         android:key="Info"
         android:title="@string/information">
@@ -9,31 +11,42 @@
             android:key="Module info"
             android:summary="@string/info_s"
             android:title="@string/info">
-
-
         </PreferenceScreen>
         <PreferenceScreen
             android:key="Module info 2"
             android:summary="@string/info2_s">
-
         </PreferenceScreen>
         <PreferenceScreen
             android:key="tip"
-            android:summary="@string/tip_s"></PreferenceScreen>
-
+            android:summary="@string/tip_s">
+        </PreferenceScreen>
     </PreferenceScreen>
     <PreferenceScreen
-        android:key="thx"
-        android:title="@string/thx">
-        <PreferenceScreen
-            android:key="support me"
-            android:summary="@string/supportme_s"
-            android:title="@string/supportme"></PreferenceScreen>
-        <PreferenceScreen
-            android:summary="@string/details_s"
-            android:title="@string/details">
-
-        </PreferenceScreen>
+        android:key="layout_conf"
+        android:title="@string/layout_conf">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="chk_settings"
+            android:summary="@string/add_settings_info"
+            android:title="@string/add_settings" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="chk_clock"
+            android:summary="@string/add_clock_info"
+            android:title="@string/add_clock" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="chk_calendar"
+            android:summary="@string/add_calendar_info"
+            android:title="@string/add_calendar" />
+        <!--<PreferenceScreen-->
+            <!--android:key="support me"-->
+            <!--android:summary="@string/supportme_s"-->
+            <!--android:title="@string/supportme"></PreferenceScreen>-->
+        <!--<PreferenceScreen-->
+            <!--android:summary="@string/details_s"-->
+            <!--android:title="@string/details">-->
+        <!--</PreferenceScreen>-->
     </PreferenceScreen>
     <PreferenceCategory
         android:key="tweaks"
@@ -59,4 +72,6 @@
         android:key="hide_app"
         android:summary="@string/hide_s"
         android:title="@string/hide" />
+
 </PreferenceScreen>
+

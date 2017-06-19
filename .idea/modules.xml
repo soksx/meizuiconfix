@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MeizuIconFix.iml" filepath="$PROJECT_DIR$/MeizuIconFix.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/meizuiconfix-master.iml" filepath="$PROJECT_DIR$/meizuiconfix-master.iml" />
     </modules>
   </component>
 </project>

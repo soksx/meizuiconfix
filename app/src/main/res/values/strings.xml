@@ -19,7 +19,8 @@
 
     <string name="disable_MC">Disable MC icons</string>
     <string name="disable_MC_s">MC stands for Meizu Customized. These icons (e.g whatsapp) are already has been shown without this module. But you can disable them and see what will happen. May be there will not be any difference at all.</string>
-    <string name="thx">Say thanks to me</string>
+    <!--<string name="thx">Say thanks to me</string>-->
+    <string name="layout_conf">Layout settings</string>
 
     <string name="supportme_s">I have spend a lot of hours and days to get things work.\nIf you wish you can donate to me.
          </string>
@@ -28,4 +29,10 @@
     <string name="supportme">Support me</string>
     <string name="title_activity_pref">PrefActivity</string>
 
+    <string name="add_settings">Settings icon</string>
+    <string name="add_settings_info">Add settings icon to status bar like flyme 5 (Use only if you have Flyme 6)</string>
+    <string name="add_clock">Clock shortcut</string>
+    <string name="add_clock_info">Add clock shortcut tapping into statusbar clock (Use only if you have Flyme 6)</string>
+    <string name="add_calendar">Calendar shortcut</string>
+    <string name="add_calendar_info">Add calendar shortcut tapping into statusbar date (Use only if you have Flyme 6)</string>
 </resources>

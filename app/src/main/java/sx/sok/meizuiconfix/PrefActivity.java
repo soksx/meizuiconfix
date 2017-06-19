@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
+import android.view.MenuItem;
 
 
 public class PrefActivity extends PreferenceActivity {
@@ -17,8 +18,6 @@ public class PrefActivity extends PreferenceActivity {
     @SuppressWarnings("deprecation")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
         //setTheme(android.R.style.Theme_Light);
         setTheme(android.R.style.Theme_Material_Settings);
         super.onCreate(savedInstanceState);
@@ -43,18 +42,16 @@ public class PrefActivity extends PreferenceActivity {
                 });
 
     }
-
-
-    protected void onStop()  // save preferences for ability to read it in xposed
-    {
+    protected void onStop() { // save preferences for ability to read it in xposed
         super.onStop();
         sp1 = getSharedPreferences("settings", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp1.edit();
         editor.putString("scale", sp.getString("scale", "46"));
         editor.putString("padding", sp.getString("padding", "2"));
         editor.putBoolean("disable_MC", sp.getBoolean("disable_MC", false));
+        editor.putBoolean("chk_settings", sp.getBoolean("chk_settings", false));
+        editor.putBoolean("chk_clock", sp.getBoolean("chk_clock", false));
+        editor.putBoolean("chk_calendar", sp.getBoolean("chk_calendar", false));
         editor.commit();
     }
-
-
 }

@@ -42,13 +42,13 @@ public class ReplaceMethod {
         XC_MethodReplacement mTRUE = new XC_MethodReplacement() {
             @Override
             protected Object replaceHookedMethod(MethodHookParam methodHookParam) throws Throwable {
-                return Boolean.valueOf(true);
+                return true;
             }
         };
         XC_MethodReplacement mFALSE = new XC_MethodReplacement() {
             @Override
             protected Object replaceHookedMethod(MethodHookParam methodHookParam) throws Throwable {
-                return Boolean.valueOf(false);
+                return false;
             }
         };
 
@@ -71,7 +71,7 @@ public class ReplaceMethod {
         if (disable_MC == true) {
             XposedHelpers.findAndHookMethod("com.flyme.systemui.statusbar.phone.MeizuCustomizedIcons",
                     classLoader, "isMeizuCustomizedIcon", String.class, mFALSE);
-        } 
+        }
         /*else {
             XposedHelpers.findAndHookMethod("com.flyme.systemui.statusbar.phone.MeizuCustomizedIcons",
                     classLoader, "isMeizuCustomizedIcon", String.class, mTRUE);
@@ -123,7 +123,7 @@ public class ReplaceMethod {
     }
 
     public static boolean isUserApp(Context context,String pkg) {
-        if (pkg == null || isException(pkg)) return false;
+        if (pkg == null || isException(pkg) || !disable_MC) return false;
         try {
             ApplicationInfo ai = context.getPackageManager().getApplicationInfo(pkg, 0);
             int mask = ApplicationInfo.FLAG_SYSTEM | ApplicationInfo.FLAG_UPDATED_SYSTEM_APP;
